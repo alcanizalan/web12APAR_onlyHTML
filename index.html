@@ -10,40 +10,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div>
+    <header> <!-- Header del proyecto -->
+        <section><!-- Verás que en cada sección hay un div contenedor para así organizar mejor el contenido, el objetivo es que
+            el section tenga el 100vw y el div interior el tamaño que querremos que ocupe el contenido de la web, en mi caso suelo poner entre 1000px y 1200px -->
             <div>
                 <address>
-                    <div>
+                    <p>
                         <img src="img/location.png" alt="">
-                        <span>Box 565, Bharleston, Nevis, West Indies</span>
-                    </div>
-                    <div>
+                        Box 565, Bharleston, Nevis, West Indies
+                    </p>
+                    <p>
                         <img src="img/reloj.png" alt="">
-                        <span>Mon - Sat: 8.00AM - 17.30 PM</span>
-                    </div>
+                        Mon - Sat: 8.00AM - 17.30 PM
+                    </p>
                 </address>
-                <div>
-                    <form action="">
-                        <label>Currency: </label>
-                        <select name="currency" id="currency">
-                            <option value="usd">USD</option>
-                            <option value="eur">EUR</option>
-                            <option value="gbp">GBP</option>
-                        </select>
-                        <label>Language: </label>
-                        <select name="language" id="language">
-                            <option value="en">English</option>
-                            <option value="es">Spanish</option>
-                            <option value="fr">French</option>
-                        </select>
-                    </form>
-                </div>
+                <form action="">
+                    <label>Currency: </label>
+                    <select name="currency" id="currency">
+                        <option value="usd">USD</option>
+                        <option value="eur">EUR</option>
+                        <option value="gbp">GBP</option>
+                    </select>
+                    <label>Language: </label>
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="es">Spanish</option>
+                        <option value="fr">French</option>
+                    </select>
+                </form>
             </div>
-        </div>
-        <div>
+        </section>
+        <section>
             <div>
-                <span>HOTLINE: +0 (800) 423-754</span>
+                <span>HOTLINE: +0 (800) 423-754</span> <!-- No uso strong porque es una mala practica para el html semantico, hay que usar en css el font-weight -->
                 <img src="img/logo.png" alt="">
                 <div>
                     <img src="img/lupa.png" alt="">
@@ -51,7 +50,7 @@
                     <img src="img/bolsa.png" alt="">
                 </div>
             </div>
-        </div>
+        </section>
         <nav>
             <ul>
                 <li><a>SHOP DEPARTAMENTS</a></li>
@@ -64,7 +63,7 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section><!-- Primera seccion -->
         <nav>
             <ul>
                 <li><a>SERVICE KITS</a></li>
@@ -75,169 +74,186 @@
         <div>
             <div>
                 <article>
-                    <div>
+                    <figure>
                         <span>Sale!</span>
-                        <img src="" alt="">
-                    </div>
+                        <img src="" alt="OTTOMAN TURBO">
+                        <figcaption>OTTOMAN TURBO</figcaption>
+                    </figure>
                     <p>OTTOMAN TURBO</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de OTTOMAN TURBO">
                     <p><span>$79.90</span> <span>$78.00</span></p>
                 </article>
                 <article>
-                    <div>
+                    <figure>
                         <span>Sale!</span>
-                        <img src="" alt="">
-                    </div>
+                        <img src="" alt="EARPHONE CASE">
+                        <figcaption>EARPHONE CASE</figcaption>
+                    </figure>
                     <p>EARPHONE CASE</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de EARPHONE CASE">
                     <p><span>$49.90</span> <span>$29.90</span></p>
                 </article>
                 <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                    <figure>
+                        <img src="" alt="WALLNUT WALL">
+                        <figcaption>WALLNUT WALL</figcaption>
+                    </figure>
                     <p>WALLNUT WALL</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de WALLNUT WALL">
                     <p>$50.00</p>
                 </article>
                 <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                    <figure>
+                        <img src="" alt="TAKATA GLASS">
+                        <figcaption>TAKATA GLASS</figcaption>
+                    </figure>
                     <p>TAKATA GLASS</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de TAKATA GLASS">
                     <p>$60.90</p>
                 </article>
                 <article>
-                    <div>
+                    <figure>
                         <span>Sale!</span>
-                        <img src="" alt="">
-                    </div>
+                        <img src="" alt="AUTO OIL">
+                        <figcaption>AUTO OIL</figcaption>
+                    </figure>
                     <p>AUTO OIL</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de AUTO OIL">
                     <p><span>$29.90</span> <span>$29.00</span></p>
                 </article>
                 <article>
-                    <div>
+                    <figure>
                         <span>Sale!</span>
-                        <img src="" alt="">
-                    </div>
+                        <img src="" alt="HORRISON">
+                        <figcaption>HORRISON</figcaption>
+                    </figure>
                     <p>HORRISON</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de HORRISON">
                     <p><span>$397.90</span> <span>$350.90</span></p>
                 </article>
                 <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
+                    <figure>
+                        <img src="" alt="KIME TURBO">
+                        <figcaption>KIME TURBO</figcaption>
+                    </figure>
                     <p>KIME TURBO</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de KIME TURBO">
                     <p>$67.90 - $124.90</p>
                 </article>
                 <article>
-                    <div>
+                    <figure>
                         <span>Sale!</span>
-                        <img src="" alt="">
-                    </div>
+                        <img src="" alt="YAMA CAMERA">
+                        <figcaption>YAMA CAMERA</figcaption>
+                    </figure>
                     <p>YAMA CAMERA</p>
-                    <img src="" alt="">
+                    <img src="" alt="estrellas de YAMA CAMERA">
                     <p>$100.00</p>
                 </article>
             </div>
         </div>
     </section>
-    <section>
+    <section><!-- Segunda seccion -->
         <h2>CHOOSE PARTS BY BRAND</h2>
-        <span>Lorem ipsum dolor sit amet consectetur</span>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
         <div>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 1">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 2">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 3">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 4">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 5">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 6">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 7">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 8">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 9">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 10">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 11">
             </article>
             <article>
-                <img src="" alt="">
+                <img src="" alt="Marca 12">
             </article>
         </div>
     </section>
-    <footer>
+    <footer><!-- Footer del proyecto -->
         <div>
-            <div>
-                <section>
+            <section>
+                <nav>
                     <h3>HELP & SUPPORT</h3>
                     <ul>
-                        <li><a href="">Wishlist</a></li>
-                        <li><a href="">My account</a></li>
-                        <li><a href="">Store Locator</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
-                </section>
-                <section>
+                </nav>
+                <nav>
                     <h3>CUSTOMER SERVICE</h3>
                     <ul>
-                        <li><a href="">Support Center</a></li>
-                        <li><a href="">Policies</a></li>
-                        <li><a href="">Returns</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="#">Support Center</a></li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
-                </section>
-                <section>
+                </nav>
+                <nav>
                     <h3>ABOUT US</h3>
                     <ul>
-                        <li><a href="">Partners</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Product Recall</a></li>
-                        <li><a href="">Shipping</a></li>
-                        <li><a href="">Blog</a></li>
+                        <li><a href="#">Partners</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Product Recall</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Blog</a></li>
                     </ul>
-                </section>
+                </nav>
                 <section>
-                    <h3>CONTACT</h3>
-                    <ul>
-                        <li>Address: Box 565, Charlestown, Nevis, West indies</li>
-                        <li>Phone: +(48) 889 456 789</li>
-                        <li>Email: help.apar@gmail.com</li>
-                    </ul>
-                    <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </div>
+                    <address>
+                        <h3>CONTACT</h3>
+                        <ul>
+                            <li><img src="" alt="logo ubicacion">Address: Box 565, Charlestown, Nevis, West indies</li>
+                            <li><img src="" alt="logo telefono">Phone: +(48) 889 456 789</li>
+                            <li><img src="" alt="logo email">Email: help.apar@gmail.com</li>
+                        </ul>
+                    </address>
+                    <nav>
+                        <img src="" alt="logo facebook">
+                        <img src="" alt="logo twitter">
+                        <img src="" alt="logo youtube">
+                        <img src="" alt="logo pinterest">
+                        <img src="" alt="logo instagram">
+                    </nav>
                 </section>
-            </div>
-            <div>
-                
-            </div>
+            </section>
+            <section>
+                <p>Copyright © 2020 | APAR. All rights reserved.</p>
+                <div>
+                    <img src="" alt="logo paypal">
+                    <img src="" alt="logo visa">
+                    <img src="" alt="logo mastercard">
+                    <img src="" alt="logo american express">
+                    <img src="" alt="logo discover">
+                </div>
+            </section>
         </div>
     </footer>
 </body>
