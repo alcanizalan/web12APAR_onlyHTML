@@ -9,10 +9,17 @@
     --navyblue-apar: #2a2c3c;
     --black-apar: #252629;
     --gray-apar: #aaaaaa;
+    --open-sans-font: 'Open Sans', sans-serif;
+    --oswald-font: 'Oswald', sans-serif;
 }
 
 body{
-    font-family: "Open Sans";
+    font-family: var(--open-sans-font);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--oswald-font);
+    font-weight: 500;
 }
 
 .header{
@@ -20,7 +27,6 @@ body{
     flex-direction: column;
     width: 100%;
 }
-
 
 .top-header{
     background-color: #eeeeee;
@@ -91,7 +97,13 @@ ul{
 
 li:hover{
     cursor: pointer;
-    height: 100%;
+}
+
+.li-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .button-nav{
@@ -99,9 +111,100 @@ li:hover{
     border: none;
     color: white;
     cursor: pointer;
+    padding: 0 30px;
+    font-family: var(--oswald-font);
+    font-size: .9em;
     height: 100%;
+}
+
+.button-nav-selected{
+    background-color: var(--orange-apar);
 }
 
 .button-nav:hover{
     background-color: var(--orange-apar);
+}
+
+
+
+.brands-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.brands-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    width: 1100px;
+}
+
+.hidden-titles{
+    display: none;
+}
+
+.brands-container img{
+    width: 140px;
+}
+
+.shop-section{
+    display: flex;
+    justify-content: center;
+}
+
+.shop-container{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+}
+
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.article{
+    height: fit-content;
+    width: 250px;
+}
+
+.article-img{
+    width: 100%;
+}
+
+.product-tag{
+    position: absolute;
+    background-color: var(--orange-apar);
+    color: white;
+    padding: 5px 10px;
+    margin: 10px 0 0 10px;
+}
+
+.article-img--container{
+    position: relative;
+}
+
+.product-title{
+    margin: 10px 0 5px 0;
+    font-weight: 300;
+}
+.product-puntuation{
+    font-size: 0.8em;
+}
+.product-price{
+    margin: 10px 0;
+}
+.old-price{
+    text-decoration: line-through;
+    color: var(--gray-apar);
+    margin-right: 10px;
+}
+.new-price{
+    font-weight: bold;
 }
