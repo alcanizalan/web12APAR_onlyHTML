@@ -163,15 +163,14 @@ li:hover{
 }
 
 .products-container{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     justify-content: center;
 }
 
 .article{
     height: fit-content;
-    width: 250px;
 }
 
 .article-img{
@@ -207,4 +206,38 @@ li:hover{
 }
 .new-price{
     font-weight: bold;
+}
+
+.footer{
+    background-color: var(--navyblue-apar);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.footerAdjust{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1100px;
+}
+.footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footerLinks-ul{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.imgMetodoPago{
+    height: 24px;
+}
+.footerBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #4d5068;
+    padding: 10px 0 ;
 }
